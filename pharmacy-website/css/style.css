@@ -1,0 +1,240 @@
+/* 🌍 Global Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: #fbf9fc;
+  color: #333;
+}
+
+/* 🌈 Header & Navigation */
+header {
+  background: linear-gradient(90deg, #00c5cc, #4e00b3);
+  color: #fff;
+  padding: 15px 30px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #ffd633;
+}
+
+nav a.active::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 2px;
+  background: #ffd633;
+  margin: auto;
+  margin-top: 5px;
+}
+
+/* 📱 Mobile Menu */
+#menu-toggle {
+  display: none;
+}
+
+@media(max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #208509;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 220px;
+    padding: 20px;
+  }
+  nav ul.show {
+    display: flex;
+  }
+  #menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: white;
+  }
+}
+
+/* ✨ Hero Section */
+.hero {
+  background: url("../images/pharmacy.jpg") center/cover no-repeat, linear-gradient(rgba(40, 113, 79, 0.6), rgba(0,179,179,0.6));
+  background-blend-mode: overlay;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #ff6600;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #4dff77;
+  transform: scale(1.05);
+}
+
+/* 📦 Section Styling */
+main h2 {
+  color: #a000cc;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 2rem;
+  position: relative;
+}
+
+main h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #00b3b3;
+  margin: 10px auto;
+}
+
+/* 📋 Lists */
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+ul li {
+  padding: 10px;
+  margin: 5px 0;
+  background: #eef6ff;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+ul li:hover {
+  background: #d6ebff;
+  transform: scale(1.02);
+}
+
+/* 🖼️ Gallery */
+.gallery {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 30%;
+  min-width: 200px;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* 📬 Contact Form */
+form {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+form button {
+  margin-top: 15px;
+  background: #0066cc;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+form button:hover {
+  background: #00b3b3;
+  transform: translateY(-2px);
+}
+
+/* ⚓ Footer */
+footer {
+  background: #cc009c;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+i {
+  color: #9e00b3;
+  margin-right: 8px;
+}
+
+nav i {
+  color: #ffd633;
+}
+
+ul li i {
+  color: #be00cc;
+}
+

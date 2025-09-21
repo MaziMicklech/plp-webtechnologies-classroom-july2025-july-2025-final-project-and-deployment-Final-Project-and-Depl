@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - MM Pharmacy</title>
+  <!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>MM Pharmacy</h1>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button id="menu-toggle">☰</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you. Reach out anytime!</p>
+  </section>
+
+  <main>
+    <section>
+      <h2>Get in Touch</h2>
+      <form name="contactForm" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="Your full name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="Your email address" required>
+
+        <label for="message">Message:</label>
+        <textarea name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Our Location</h2>
+      <p><strong>Address:</strong> 4 Ayo Adelusi Street, Lagos, Nigeria</p>
+      <p><strong>Phone:</strong> +234 816 344 1047</p>
+      <p><strong>Email:</strong> support@mmpharmacy.com</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 MM Pharmacy | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
