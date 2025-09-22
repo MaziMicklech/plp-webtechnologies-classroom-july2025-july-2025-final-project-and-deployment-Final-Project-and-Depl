@@ -3,38 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MM Pharmacy  - Home</title>
-  <!-- Font Awesome Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <title>ROAR PHARMACY STORE</title>
   <link rel="stylesheet" href="css/style.css">
-  <script defer src="js/script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
+  <!-- Header Section -->
   <header>
-    <nav>
-      <h1>MM Pharmacy </h1>
-      <ul id="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <button id="menu-toggle">☰</button>
-    </nav>
+    <nav class="navbar">
+  <div class="logo">
+    <a href="index.html">ROAR PHARMACY</a>
+  </div>
+
+  <!-- Hamburger Menu -->
+  <div class="hamburger">
+    <i class="fa fa-bars"></i>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <div class="cart">
+    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+  </div>
+</nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <h2>Welcome to Your Trusted Pharmacy</h2>
-      <p>Quality healthcare products & services at your convenience.</p>
-      <a href="services.html" class="btn">Explore Services</a>
-    </section>
-  </main>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to ROAR PHARMACY STORE</h1>
+      <p>Your one-stop shop for all your pharmaceutical needs</p>
+      <a href="shop.html" class="btn">Shop Now</a>
+    </div>
+  </section>
 
+  <!-- Featured Products Section -->
+  <section class="featured-products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/drug4.jpeg" alt="Product 1">
+        <h3>Product 1</h3>
+        <p>$19.99</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images/drug1.jpeg" alt="Product 2">
+        <h3>Product 2</h3>
+        <p>$29.99</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images/chateberry.jpeg" alt="Chasteberry">
+        <h3>Product 3</h3>
+        <p>$39.99</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
   <footer>
-    <p>© 2025 MM Pharmacy Outlet | All Rights Reserved</p>
+    <p>&copy; 2025 ROAR PHARMACY STORE</p>
+    <ul class="social-links">
+      <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+    </ul>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
