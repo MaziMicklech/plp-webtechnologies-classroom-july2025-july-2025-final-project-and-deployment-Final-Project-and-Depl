@@ -1,90 +1,70 @@
-# 📦 Final Assignment: Build, Organize, and Deploy a Multipage Website
+# ROAR Pharmacy Online Store
 
-You're now ready to bring everything together—HTML, CSS, JavaScript, planning, structure, and deployment. This final project challenges you to **conceptualize, build, and deploy a multi-page website** that is responsive, interactive, and ready for the real world.
+Welcome to **ROAR Pharmacy Online Store** – your trusted platform for convenient, safe, and reliable access to pharmaceutical products and professional consultations, all from the comfort of your home.
 
-This assignment will guide you from planning your site all the way to deploying it online. Let’s make your project *production-worthy*! 🚀
+## Features
 
+- **Wide Range of Drugs:** Browse and order prescription and non-prescription medicines easily.
+- **Online Consultations:** Get expert advice and consultations from qualified pharmacists.
+- **Home Delivery:** Fast and secure delivery of your medicines right to your doorstep.
+- **User-Friendly Interface:** Simple navigation for a seamless shopping experience.
+- **Secure & Private:** Your health information and orders are handled with utmost confidentiality.
+
+## How It Works
+
+1. **Browse Products:** Explore our extensive catalog of medicines and healthcare products.
+2. **Consult a Pharmacist:** Use our online consultation feature for expert guidance.
+3. **Place Your Order:** Add items to your cart and checkout securely.
+4. **Home Delivery:** Receive your order quickly and safely at your preferred address.
+
+
+## Technologies Used
+- Top-level:
+
+- README.md
+- html/ — site source (open html/index.html to preview).
+ Inside html/:
+
+- index.html, about.html, services.html, gallery.html, contact.html — main pages.
+
+- css/style.css — primary stylesheet (layout and components).
+
+- js/script.js — page scripts (counters, FAQ accordion, partners marquee, small UI logic).
+
+- image/ — image assets used across the site (logos, hero, icons, photos).
+
+- Header/footer: present in each page — change in every HTML file or adopt a templating workflow.
+
+- Logo image: html/image/plogo.jpg — replace to update branding.
+
+- Gallery: html/gallery.html (uses figure.gallery-card with captions).
+
+- Quote form: index.html under .quote-section
+
+## Key features
+- Responsive layout with CSS Grid and Flexbox.
+- Hero with call-to-action buttons.
+- Services cards, steps, and animated counters.
+- Quote form in a dedicated section.
+- Partners marquee with continuous scrolling logos.
+- Gallery cards with captions.
+
+- Editing notes
+- Header/footer: to change navigation or logo, update those blocks in each html/*.- html file or use a build step to include a shared header/footer.
+- Logo filenames: avoid spaces (rename to logo.jpg) to simplify references.
+- Gallery items: edit gallery.html, use figure.gallery-card and update <figcaption> for descriptions.
+
+- Partners: update both .partners-track lists in index.html to keep marquee seamless.
+## Scripts and behavior
+- html/js/script.js includes:
+  Counter animation (starts when counters enter viewport using  IntersectionObserver).
+
+## Deployment
+GitHub Pages: push to GitHub and configure Pages. Use the html/ folder as the site root if needed. link to website (https://roarpharmacy.netlify.app/)/
+## Accessibility & responsiveness
+
+- Images include alt attributes; update them to describe content.
+- Test responsive behavior across devices; CSS includes responsive breakpoints.
 ---
 
-## 🌐🎯 Part 1: Planning and Organizing a Multipage Website
-
-Before you write any code, take time to plan:
-
-* Define your website's purpose (portfolio, product showcase, blog, etc.)
-* Outline 3–5 pages (e.g., Home, About, Services, Contact, Gallery)
-* Sketch or describe the layout of each page
-* Map out internal navigation (how pages link to one another)
-
-**Goal:** Show intentional structure and user journey across the site.
-
----
-
-## 🌍💻 Part 2: Build the Website Using HTML5, CSS, and JavaScript
-
-Using your plan, begin building:
-
-* Use HTML5 for semantic structure
-* Apply CSS for responsive layout, styling, and animations
-* Use JavaScript to add interactivity (menus, forms, toggles, dynamic content)
-
-Each page should:
-
-* Be mobile-responsive
-* Share a consistent layout/header/footer
-* Include at least one interactive element (e.g., form validation, toggle menu, animation on scroll)
-
-**Goal:** Integrate everything you’ve learned in a cohesive, functioning project.
-
----
-
-## 🛠️🚀 Part 3: Best Practices for Code Organization
-
-Before deployment, refactor your project to follow production-friendly practices:
-
-* Organize files in folders (`/css`, `/js`, `/images`, etc.)
-* Write clean, modular, and commented code
-* Use meaningful file names and relative paths
-* Validate your HTML/CSS and test on different screen sizes
-
-**Goal:** Prepare your codebase to be readable, maintainable, and scalable.
-
----
-
-## 🌐🚀 Part 4: Introduction to Hosting and Deployment
-
-Once your project is complete, choose a method to **host your site online**.
-
-You can use:
-
-* **GitHub Pages** (great for portfolios and static sites)
-* **Netlify** (powerful CI/CD features and easy form support)
-* **Vercel** (lightning-fast deployment for frontend projects)
-
-Deploy your project and confirm that:
-
-* All links and scripts work
-* It loads properly on mobile and desktop
-* It has a clear, shareable URL
-
-**Goal:** Publish your work online and make it accessible to the world.
-
----
-
-## Deliverables
-
-1. A GitHub repository containing:
-
-   * Your complete project code, properly organized
-   * A `README.md` file explaining your project purpose, structure, and live URL
-2. A live deployed website (hosted via GitHub Pages, Netlify, or Vercel)
-
----
-
-## Outcome
-
-* Clarity and thoroughness of planning documentation
-* Proper use of HTML5, CSS, and JavaScript across multiple pages
-* Responsive and accessible design
-* Clean, well-organized, and commented code
-* Successful live deployment with a working link
-* Evidence of following best practices
+**ROAR Pharmacy Online Store** – Making healthcare accessible, convenient, and reliable for everyone.
